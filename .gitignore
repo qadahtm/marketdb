@@ -1,6 +1,9 @@
 *.class
 *.log
 
+#MAC OSX
+.DS_Store
+
 # sbt specific
 .cache/
 .history/
