@@ -10,8 +10,7 @@ packSettings
 
 seq(
         packMain := Map(
-        "WebServer" -> "edu.purdue.sfss.ui.Webserver"
-        ,"SimpleClient" -> "edu.purdue.sfss.example.SimpleClient"    
+        "Hello" -> "qadahtm.HelloWorld"
 	),
         // [Optional] (Generate .bat files for Windows. The default value is true)
         packGenerateWindowsBatFile := true,
