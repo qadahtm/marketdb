@@ -1,16 +1,17 @@
 import AssemblyKeys._
 
-name := "ExampleProject"
+name := "marketDB"
 
 version := "0.1"
 
-scalaVersion := "2.10.4"
+scalaVersion := "2.11.6"
 
 packSettings
 
 seq(
         packMain := Map(
-        "Hello" -> "qadahtm.HelloWorld"
+        "Hello" -> "qadahtm.HelloWorld",
+        "HelloJ" -> "org.marketdb.HelloJ"
 	),
         // [Optional] (Generate .bat files for Windows. The default value is true)
         packGenerateWindowsBatFile := true,
@@ -33,12 +34,12 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-  "com.typesafe.akka"  %% "akka-actor"       % "2.3.6",
-  "com.typesafe.akka"  %% "akka-slf4j"       % "2.3.6",
-  "com.typesafe.akka"  %% "akka-remote"       % "2.3.6",
-  "io.spray"           %% "spray-can"        % "1.3.2",
-  "io.spray"           %% "spray-routing"    % "1.3.2",
-  "io.spray"           %% "spray-httpx"    % "1.3.2",
+  "com.typesafe.akka"  %% "akka-actor"       % "2.3.9",
+  "com.typesafe.akka"  %% "akka-slf4j"       % "2.3.9",
+  "com.typesafe.akka"  %% "akka-remote"       % "2.3.9",
+  "io.spray"           %% "spray-can"        % "1.3.4",
+  "io.spray"           %% "spray-routing"    % "1.3.4",
+  "io.spray"           %% "spray-httpx"    % "1.3.4",
   "io.spray"           %% "spray-json"       % "1.3.0",
   "joda-time"		    % "joda-time" 		% "latest.integration",
   "org.joda" 			% "joda-convert" 	% "latest.integration",
